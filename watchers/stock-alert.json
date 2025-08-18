@@ -1,0 +1,5 @@
+{
+  "name": "Stock Alert",
+  "description": "Alert when inventory stock is low",
+  "config": {}
+}

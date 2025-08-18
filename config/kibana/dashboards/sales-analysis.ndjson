@@ -1,0 +1,11 @@
+{
+  "type": "dashboard",
+  "id": "sales-analysis-dashboard",
+  "attributes": {
+    "title": "📈 Sales Analysis",
+    "description": "Analyse des tendances de vente",
+    "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":24,\"h\":12},\"type\":\"visualization\",\"id\":\"sales-over-time\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":12,\"w\":12,\"h\":12},\"type\":\"visualization\",\"id\":\"channel-distribution\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":12,\"y\":12,\"w\":12,\"h\":12},\"type\":\"visualization\",\"id\":\"payment-methods\"}]",
+    "optionsJSON": "{\"darkTheme\":false}",
+    "version": 1
+  }
+}

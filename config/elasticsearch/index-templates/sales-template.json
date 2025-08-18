@@ -1,0 +1,43 @@
+{
+  "index_patterns": ["sales-*"],
+  "template": {
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1,
+      "index.lifecycle.name": "sales-ilm-policy",
+      "index.lifecycle.rollover_alias": "sales-alias"
+    },
+    "mappings": {
+      "properties": {
+        "order_id":           { "type": "keyword" },
+        "order_date":         { "type": "date", "format": "yyyy-MM-dd" },
+        "customer_id":        { "type": "keyword" },
+        "customer_name":      { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+        "customer_email":     { "type": "keyword" },
+        "customer_city":      { "type": "keyword" },
+        "customer_country":   { "type": "keyword" },
+        "product_id":         { "type": "keyword" },
+        "product_name":       { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+        "product_category":   { "type": "keyword" },
+        "quantity":           { "type": "integer" },
+        "unit_price":         { "type": "float" },
+        "total_amount":       { "type": "float" },
+        "sales_rep":          { "type": "keyword" },
+        "sales_region":       { "type": "keyword" },
+        "channel":            { "type": "keyword" },
+        "payment_method":     { "type": "keyword" },
+        "customer_age":       { "type": "integer" },
+        "customer_segment":   { "type": "keyword" },
+        "source":             { "type": "keyword" },
+        "@timestamp":         { "type": "date" }
+      }
+    }
+  },
+  "priority": 10,
+  "version": 1,
+  "_meta": {
+    "description": "Template pour les données de ventes",
+    "author": "Jérôme",
+    "usage": "Appliqué automatiquement aux index sales-*"
+  }
+}

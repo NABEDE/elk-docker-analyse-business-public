@@ -1,0 +1,60 @@
+[ERREUR] Fichier de mapping manquant : ../add-bi/sales_mapping.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/sales_pipeline.json
+[ERREUR] Fichier de mapping manquant : ../add-bi/sales_mapping.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/sales_pipeline.json
+[ERREUR] Fichier de mapping manquant : ../add-bi/sales_mapping.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] Fichier pipeline introuvable : ../logstash/config/sales_pipeline.json
+[ERREUR] ⚠️ Ligne ignorée (non JSON valide) : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[ERREUR] ⚠️ Ligne ignorée (non JSON valide) : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[ERREUR] ⚠️ Ligne ignorée (non JSON valide) : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[ERREUR] ⚠️ Ligne ignorée (non JSON valide) : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[ERREUR] ⚠️ Ligne ignorée (non JSON valide) : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[ERREUR] ⚠️ Ligne ignorée (non JSON valide) : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[ERREUR] Échec création pipeline ingest sales_ingest_pipeline
+[ERREUR] ⚠️ Ligne ignorée (non JSON valide) : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[ERREUR] Échec création pipeline ingest sales_ingest_pipeline
+[ERREUR] ⚠️ Ligne ignorée (non JSON valide) : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[ERREUR] Échec création pipeline ingest sales_ingest_pipeline
+[ERREUR] ⚠️ Ligne ignorée (non JSON valide) : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[ERREUR] Échec création pipeline ingest sales_ingest_pipeline
+[ERREUR] ⚠️ Ligne ignorée (non JSON valide) : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 11:42:04] [ERROR] Pipeline ingest manquant : ingest/sales_pipeline.json
+[2025-08-05 11:42:04] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 12:01:39] [ERROR] Pipeline ingest manquant : ingest/sales_pipeline.json
+[2025-08-05 12:01:39] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 12:04:05] [ERROR] Pipeline ingest manquant : ingest/sales_pipeline.json
+[2025-08-05 12:04:05] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 12:13:22] [ERROR] Pipeline ingest manquant : ingest/sales_pipeline.json
+[2025-08-05 12:13:22] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 12:14:22] [ERROR] Pipeline ingest manquant : ingest/sales_pipeline.json
+[2025-08-05 12:14:22] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 12:18:05] [ERROR] Pipeline ingest manquant : ingest/sales_pipeline.json
+[2025-08-05 12:18:05] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 12:57:22] [ERROR] Elasticsearch non disponible sur http://localhost:9200
+[2025-08-05 13:02:36] [ERROR] Pipeline ingest manquant : ingest/sales_pipeline.json
+[2025-08-05 13:02:36] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 15:00:35] [ERROR] Pipeline ingest manquant : ingest/sales_pipeline.json
+[2025-08-05 15:00:35] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 16:15:15] [ERROR] ❌ Template d’index manquant : config/elasticsearch/index-templates/sales-template.json
+[2025-08-05 16:15:15] [ERROR] ❌ Fichier Logstash pipeline introuvable : config/logstash/sales-pipeline.conf
+[2025-08-05 16:15:15] [ERROR] ❌ Fichier CSV introuvable : data/sales/sales_data.csv
+[2025-08-05 17:33:09] [ERROR] Elasticsearch non disponible sur http://localhost:9200
+[2025-08-05 17:33:57] [ERROR] Elasticsearch non disponible sur http://localhost:9200

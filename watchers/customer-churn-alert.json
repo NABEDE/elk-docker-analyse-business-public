@@ -1,0 +1,5 @@
+{
+  "name": "Customer Churn Alert",
+  "description": "Alert when customer churn risk detected",
+  "config": {}
+}

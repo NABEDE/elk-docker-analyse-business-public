@@ -1,0 +1,20 @@
+[2025-08-05 15:26:17] [ERROR] Fichier mapping manquant : add-bi/sales_mapping.json
+[2025-08-05 15:26:17] [ERROR] pipelines.yml non trouvé : ../config/logstash/pipelines.yml
+[2025-08-05 15:36:50] [ERROR] Fichier mapping manquant : add-bi/sales_mapping.json
+[2025-08-05 15:36:50] [ERROR] pipelines.yml non trouvé : ../config/logstash/pipelines.yml
+[2025-08-05 15:46:16] [ERROR] Fichier mapping manquant : add-bi/sales_mapping.json
+[2025-08-05 15:46:16] [ERROR] pipelines.yml non trouvé : ../config/logstash/pipelines.yml
+[2025-08-05 15:47:51] [ERROR] Fichier mapping manquant : add-bi/sales_mapping.json
+[2025-08-05 15:47:51] [ERROR] pipelines.yml non trouvé : ../config/logstash/pipelines.yml
+[2025-08-05 15:57:39] [ERROR] ❌ Fichier Logstash pipeline introuvable : config/logstash/sales-pipeline.conf
+[2025-08-05 15:57:39] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 16:00:32] [ERROR] ❌ Fichier Logstash pipeline introuvable : config/logstash/sales-pipeline.conf
+[2025-08-05 16:00:32] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 16:02:17] [ERROR] ❌ Fichier Logstash pipeline introuvable : config/logstash/sales-pipeline.conf
+[2025-08-05 16:02:17] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 16:02:51] [ERROR] ❌ Fichier Logstash pipeline introuvable : config/logstash/sales-pipeline.conf
+[2025-08-05 16:02:51] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 16:05:37] [ERROR] ❌ Fichier Logstash pipeline introuvable : config/logstash/sales-pipeline.conf
+[2025-08-05 16:05:37] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment
+[2025-08-05 16:08:51] [ERROR] ❌ Fichier Logstash pipeline introuvable : config/logstash/sales-pipeline.conf
+[2025-08-05 16:08:51] [ERROR] Ligne non valide ignorée : order_id,order_date,customer_id,customer_name,customer_email,customer_city,customer_country,product_id,product_name,product_category,quantity,unit_price,total_amount,sales_rep,sales_region,channel,payment_method,customer_age,customer_segment

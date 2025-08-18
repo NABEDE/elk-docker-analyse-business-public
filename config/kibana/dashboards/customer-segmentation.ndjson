@@ -1,0 +1,11 @@
+{
+  "type": "dashboard",
+  "id": "customer-segmentation-dashboard",
+  "attributes": {
+    "title": "🧠 Customer Segmentation",
+    "description": "Analyse démographique et comportementale des clients",
+    "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":12,\"h\":10},\"type\":\"visualization\",\"id\":\"age-distribution\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":12,\"y\":0,\"w\":12,\"h\":10},\"type\":\"visualization\",\"id\":\"segment-breakdown\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":10,\"w\":24,\"h\":12},\"type\":\"visualization\",\"id\":\"customer-lifetime-value\"}]",
+    "optionsJSON": "{\"darkTheme\":false}",
+    "version": 1
+  }
+}

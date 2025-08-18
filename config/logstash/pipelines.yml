@@ -1,0 +1,10 @@
+- pipeline.id: sales-pipeline
+  path.config: "/usr/share/logstash/pipeline/sales-pipeline.conf"
+
+- pipeline.id: customers-pipeline
+  path.config: "/usr/share/logstash/pipeline/customers-pipeline.conf"
+
+- pipeline.id: finance-pipeline
+  path.config: "/usr/share/logstash/pipeline/finance-pipeline.conf"
+- pipeline.id: sales_logstash_pipeline
+  path.config: "/usr/share/logstash/pipeline/sales-pipelines.conf"

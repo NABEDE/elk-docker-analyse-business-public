@@ -1,0 +1,76 @@
+services:
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node       # nœud unique pour dev
+      - xpack.security.enabled=false     # désactive la sécurité (uniquement dev)
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m  # limite mémoire pour éviter les crashs
+      # Uncomment and adjust the following lines for custom cluster config in multi-node (prod)
+      # - cluster.name=elk-docker-analyse-business
+      # - node.name=elasticsearch-1
+      # - bootstrap.memory_lock=true
+    volumes:
+      - ./config/elasticsearch:/usr/share/elasticsearch/config
+      - ./data:/usr/share/elasticsearch/data   # persistance des données
+      - ./logs/elasticsearch:/usr/share/elasticsearch/logs   # logs accessibles depuis l’hôte
+    ports:
+      - "9200:9200"
+      - "9300:9300"  # pour la communication inter-nœuds (utile si tu ajoutes d’autres nœuds)
+    networks:
+      - bi-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fs http://localhost:9200/_cluster/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    ulimits:  # Important for avoiding memory lock issues on Linux
+      memlock:
+        soft: -1
+        hard: -1
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.15.0
+    depends_on:
+      - elasticsearch
+    volumes:
+      - ./config/kibana:/usr/share/kibana/config
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    networks:
+      - bi-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5601 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.15.0
+    depends_on:
+      - elasticsearch
+    volumes:
+      - ./config/logstash/pipelines.yml:/usr/share/logstash/config/pipelines.yml
+      - ./config/logstash/pipelines/:/usr/share/logstash/pipeline/
+    environment:
+      - LS_JAVA_OPTS=-Xms256m -Xmx512m   # limiter la mémoire pour dev
+    ports:
+      - "5044:5044"
+      - "9600:9600"  # port monitoring pour healthcheck
+    networks:
+      - bi-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9600/_node/pipelines || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+networks:
+  bi-network:
+    driver: bridge

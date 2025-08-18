@@ -1,0 +1,58 @@
+{
+  "name": "Executive BI Report",
+  "id": "executive-report-workpad",
+  "@created": "2025-08-04T00:00:00.000Z",
+  "@timestamp": "2025-08-04T00:00:00.000Z",
+  "width": 1200,
+  "height": 800,
+  "pages": [
+    {
+      "id": "page-1",
+      "name": "Dashboard Principal",
+      "elements": [
+        {
+          "id": "kpi-total-revenue",
+          "position": { "left": 40, "top": 20, "width": 300, "height": 100 },
+          "expression": "filters | essql query=\"SELECT SUM(total_amount) AS total FROM \"sales-*\"\" | metric format=\"€,0.00\" label=\"💰 Revenu Total\"",
+          "type": "element",
+          "expressionRenderable": true
+        },
+        {
+          "id": "kpi-orders-count",
+          "position": { "left": 360, "top": 20, "width": 250, "height": 100 },
+          "expression": "filters | essql query=\"SELECT COUNT(order_id) AS orders FROM \"sales-*\"\" | metric format=\",0\" label=\"📦 Commandes\"",
+          "type": "element"
+        },
+        {
+          "id": "kpi-average-basket",
+          "position": { "left": 630, "top": 20, "width": 250, "height": 100 },
+          "expression": "filters | essql query=\"SELECT AVG(total_amount) AS average FROM \"sales-*\"\" | metric format=\"€,0.00\" label=\"🛒 Panier Moyen\"",
+          "type": "element"
+        },
+        {
+          "id": "top-regions",
+          "position": { "left": 40, "top": 140, "width": 550, "height": 280 },
+          "expression": "filters | essql query=\"SELECT sales_region, SUM(total_amount) AS revenue FROM \"sales-*\" GROUP BY sales_region ORDER BY revenue DESC LIMIT 5\" | pie chart mode=donut labelColumn=\"sales_region\" valueColumn=\"revenue\"",
+          "type": "element"
+        },
+        {
+          "id": "top-products",
+          "position": { "left": 640, "top": 140, "width": 500, "height": 280 },
+          "expression": "filters | essql query=\"SELECT product_name, SUM(total_amount) AS revenue FROM \"sales-*\" GROUP BY product_name ORDER BY revenue DESC LIMIT 5\" | bar horizontal=true xaxisLabel=\"Produit\" yaxisLabel=\"Revenu\"",
+          "type": "element"
+        },
+        {
+          "id": "date-control",
+          "position": { "left": 40, "top": 440, "width": 400, "height": 60 },
+          "expression": "timefilter controlStyle=\"auto\"",
+          "type": "element"
+        }
+      ]
+    }
+  ],
+  "variables": [],
+  "colors": ["#3182bd", "#6baed6", "#9ecae1", "#c6dbef", "#e6550d", "#fd8d3c"],
+  "css": "* { font-family: 'Inter', sans-serif; }",
+  "isWriteable": true
+}
+

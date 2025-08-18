@@ -1,0 +1,25 @@
+# ======================== Elasticsearch Configuration =========================
+
+# Mode nœud unique pour dev
+cluster.name: "bi-cluster"
+node.name: "node-1"
+network.host: 0.0.0.0
+discovery.type: single-node
+
+# Limite mémoire pour éviter les crashs sur dev
+# (tu peux également contrôler via ES_JAVA_OPTS dans docker-compose)
+bootstrap.memory_lock: false
+
+# Logging
+path.logs: /usr/share/elasticsearch/logs
+path.data: /usr/share/elasticsearch/data
+
+# Sécurité désactivée pour dev
+xpack.security.enabled: false
+
+# Ajustements utiles pour dev
+http.port: 9200
+transport.port: 9300
+
+# Gestion des index et snapshots (optionnel pour dev)
+# path.repo: ["/usr/share/elasticsearch/backup"]
