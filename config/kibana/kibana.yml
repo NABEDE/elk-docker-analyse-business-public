@@ -1,0 +1,21 @@
+# =================== Kibana Configuration ===================
+
+# Nom du serveur (optionnel)
+server.name: kibana
+
+# Adresse d'écoute (0.0.0.0 pour Docker)
+server.host: "0.0.0.0"
+
+# Port d'écoute
+server.port: 5601
+
+# Adresse d'Elasticsearch (doit correspondre au nom du service dans Docker Compose)
+elasticsearch.hosts: [ "http://elasticsearch:9200" ]
+
+# Désactiver la sécurité (si xpack est désactivé côté Elasticsearch)
+xpack.security.enabled: false
+
+# Interface en français (optionnel)
+i18n.locale: "fr"
+
+# =================== Fin de configuration ===================

@@ -39,5 +39,10 @@
     "description": "Template pour les données de ventes",
     "author": "Jérôme",
     "usage": "Appliqué automatiquement aux index sales-*"
-  }
+  },
+  "aliases": {
+    "sales-alias": {
+      "is_write_index": true
+    }
+  }  
 }

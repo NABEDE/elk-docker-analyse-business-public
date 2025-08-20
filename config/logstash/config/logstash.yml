@@ -1,0 +1,13 @@
+# =================== Logstash Configuration ===================
+
+# Mode pipeline unique
+pipeline.batch.size: 125
+pipeline.batch.delay: 5
+
+# Adresse d'écoute
+http.host: "0.0.0.0"
+
+# Désactiver la vérification SSL (utile en dev)
+xpack.monitoring.enabled: false
+
+# =================== Fin de configuration ===================

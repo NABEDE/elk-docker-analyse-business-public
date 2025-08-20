@@ -21,5 +21,8 @@ xpack.security.enabled: false
 http.port: 9200
 transport.port: 9300
 
+# Ajout pour l'activation
+xpack.monitoring.collection.enabled: true
+
 # Gestion des index et snapshots (optionnel pour dev)
-# path.repo: ["/usr/share/elasticsearch/backup"]
+#path.repo: ["/usr/share/elasticsearch/backup"]
